@@ -1,0 +1,9 @@
+<!doctype html><html><head><link rel="stylesheet" href="/static/css/style.css"></head>
+<body><div class="box">
+<h1>Analysis</h1>
+<p><b>Score:</b> {{result.score}}/100</p>
+<h3>Skills</h3><ul>{% for s in result.skills %}<li>{{s}}</li>{% endfor %}</ul>
+<h3>Missing Skills</h3><ul>{% for s in result.missing %}<li>{{s}}</li>{% endfor %}</ul>
+<h3>Suggestions</h3><ul>{% for s in result.suggestions %}<li>{{s}}</li>{% endfor %}</ul>
+<a href="/">Analyze another</a>
+</div></body></html>
